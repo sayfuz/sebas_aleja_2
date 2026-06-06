@@ -1,0 +1,36 @@
+---
+import invitation from "../assets/Matri_AlejaySebas_2.jpg";
+---
+
+<div class="container">
+  <img
+    class="background-image"
+    src="https://cdn0.bodas.net/article/8911/3_2/1280/jpg/91198-alta-tds-tds5370.webp" alt="" />
+  <img class="invitation-image" src={invitation.src} alt="The Love" />
+</div>
+
+<style>
+  body {
+    background: #fdf3e7;
+  }
+  .container {
+    padding: 100px 24px 100px 24px;
+    width: fit-content;
+    margin: auto;
+  }
+  .invitation-image {
+    width: 100%;
+    box-shadow: 0 0 10px 5px #c7beb3;
+  }
+  .background-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    filter: brightness(50%);
+    object-fit: cover;
+  }
+
+</style>
